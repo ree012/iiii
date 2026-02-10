@@ -5,67 +5,8 @@
 img {
 height: 300px;
 width: 300px;
-<html>
-<head>
-<title> For You </title>
-<style>
-img {
-height: 300px;
-width: 300px;
 display: block;
 margin: 0 auto;
-}
-body {
-background-color: #FFB6C1;
-}
-h1 {
-font-family: 'Pacifico', cursive;
-text-align: center; 
-color: #C71585;
-font-size: 50px;
-}
-.button-container {
-display: flex;
-justify-content: center;
-gap: 20px;
-position: relative;
-}
-button {
-font-size: 24px;
-height: 100px;
-width: 150px;
-border-radius: 20px;
-}
-#Y {
-background-color: #FF69B4;
-color: #FFFFFF;
-text-align: center;
-}
-#N {
-background-color: #FF69B4;
-color: #FFFFFF;
-text-align: center;
-transition: 0.3s;
-}
-</style>
-</head>
-<body>
-<img src="https://raw.githubusercontent.com/ree012/iiii/main/906a0aa0178e34058edb3d30fb183608.jpg">
-<h1> Will you be my Valentine? 💘 </h1>
-<div class= "button-container">
-<button id="Y"> Yes </button>
-<button id="N"> No </button>
-</div>
-<script>
-const button= document.getElementById("N");
-button.addEventListener("click", function () {
-const x= Math.random() * 300 - 100;
-const y= Math.random() * 80 - 40;
-button.style.transform= `translate(${x}px, ${y}px)`;
-});
-</script>
-</body>
-</html>
 }
 body {
 background-color: #FFB6C1;
