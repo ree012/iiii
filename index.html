@@ -1,7 +1,13 @@
 <html>
 <head>
 <title> For You </title>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+</script>
 <style>
+#celebrationpage {
+display: none;
+text-align: center;
+}
 img {
 height: 300px;
 width: 300px;
@@ -16,6 +22,17 @@ font-family: 'Pacifico', cursive;
 text-align: center; 
 color: #C71585;
 font-size: 50px;
+}
+h2 {
+font-family: 'Comic Sans MS'
+text-align: center; 
+color: #C71585;
+font-size: 50px;
+}
+p {
+font-family: "Helvetica"
+text-align: center;
+color: #C71585;
 }
 .button-container {
 display: flex;
@@ -43,13 +60,37 @@ transition: 0.3s;
 </style>
 </head>
 <body>
+<div id="mainpage">
 <img src="https://raw.githubusercontent.com/ree012/iiii/main/906a0aa0178e34058edb3d30fb183608.jpg">
 <h1> Will you be my Valentine? 💘 </h1>
 <div class= "button-container">
 <button id="Y"> Yes </button>
 <button id="N"> No </button>
 </div>
+</div>
+<div id="celebrationpage">
+<h2> YAYAYAYA!! I KNEW YOU WOULD SAY YES!! (ofc i didn't force you to click you on "yes", right? hehe 🤭) </h2>
+<img src="https://raw.githubusercontent.com/ree012/iiii/86108f2b5b7afcb24b6cbf1788cb287f7bc5a110/73133c160cd2fbbeb10f32442660460d.jpg">
+<p> FROM NOW, I HOPE WE CELEBRATE VALENTINE'S WEEK WITH EACH OTHER EVERY YEAR AND NEVER FIND EACH OTHER'S REPLACEMENT IN THIS LONG DISTANCE RELATIONSHIP 🧿💞 I LOVE YOU SO MUCHHH, MY LOVEE💘💗🫶 FOREVER LOCKED IN TILL DEATH🔒 I REALLY AND REALLY WISH HAMI DUITA JIWAN VARI SANGAI HUNXAUU RA EK ARKA LAI SUPPORT GARDAI YO JIWAN KO KATHIN BAATO MAA SANGAI HIDXAUU ANI HAMRO JHAGADA VAYE PANI TYO XITTAI SOLVE HOS RA KUNAI PROBLEMS HARU PANI NA VAYERA SAMBANDHA RA MAYA JHANAII BADHOS RA SADHAI VARI KAAYAM RAHOSSS 💌💓 </p>
+</div>
 <script>
+const yesButton= document.getElementById("Y");
+const noButton= document.getElementById("N");
+const mainPage= document.getElementById("mainpage");
+const celebrationPage= document.getElementById("celebrationpage");
+yesButton.addEventListener("click", function () {
+mainPage.style.display= "none";
+celebrationPage.style.display= "block";
+
+
+confetti ( {
+particleCount: 500,
+spread: 180,
+origin: { y: 0.6 }
+} );
+} );
+
+
 const button= document.getElementById("N");
 button.addEventListener("click", function () {
 const x= Math.random() * 300 - 100;
