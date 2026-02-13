@@ -1,8 +1,7 @@
 <html>
 <head>
 <title> For You </title>
-<audio src="https://ree012.github.io/forhim/ssstik.io_1770997493963.mp3" 
-autoplay
+<audio id="valentineAudio" src="https://raw.githubusercontent.com/ree012/forhim/07d8cc58d4468dfda6154f402a3012a14b18bf80/ssstik.io_1771000580390.mp3"
 loop
 hidden>
 </audio>
@@ -80,13 +79,14 @@ box-shadow: none;
 <div id="celebrationpage">
 <h2> YAYAYAYA!! I KNEW YOU WOULD SAY YES!! 💓 (after reading the paragraph try clicking on "no" 🤭) </h2>
 <img src="https://raw.githubusercontent.com/ree012/iiii/86108f2b5b7afcb24b6cbf1788cb287f7bc5a110/73133c160cd2fbbeb10f32442660460d.jpg">
-<p> FROM NOW, I HOPE WE CELEBRATE VALENTINE'S WEEK WITH EACH OTHER EVERY YEAR AND NEVER FIND EACH OTHER'S REPLACEMENT IN THIS LONG DISTANCE RELATIONSHIP 🧿💞 I LOVE YOU SO MUCHHH, MY LOVEE💘💗🫶 FOREVER LOCKED IN TILL DEATH🔒 I REALLY AND REALLY WISH HAMI DUITA JIWAN VARI SANGAI HUNXAUU RA EK ARKA LAI SUPPORT GARDAI YO JIWAN KO KATHIN BAATO MAA SANGAI HIDXAUU ANI HAMRO JHAGADA VAYE PANI TYO XITTAI SOLVE HOS RA KUNAI PROBLEMS HARU PANI NA VAYERA SAMBANDHA RA MAYA JHANAII BADHOS RA SADHAI VARI KAAYAM RAHOSSS 💌💓 I ALMOST GAVE UP ON ONLINE LOVE TILL I MET YOUUU 💕 IT'S JUST BEEN 43 DAYS OF US BEING TOGETHER AND I WANNA KEEP THIS BOND FOREVER 💗♾️ AT LAST, I LOVE YOUUUU AND I WILL KEEP LOVING YOU FOREVER MWAHHH 🫶🫶 </p>
+<p> FROM NOW, I HOPE WE CELEBRATE VALENTINE'S WEEK WITH EACH OTHER EVERY YEAR AND NEVER FIND EACH OTHER'S REPLACEMENT IN THIS LONG DISTANCE RELATIONSHIP 🧿💞 I LOVE YOU SO MUCHHH, MY LOVEE💘💗🫶 FOREVER LOCKED IN TILL DEATH🔒 I REALLY AND REALLY WISH HAMI DUITA JIWAN VARI SANGAI HUNXAUU RA EK ARKA LAI SUPPORT GARDAI YO JIWAN KO KATHIN BAATO MAA SANGAI HIDXAUU ANI HAMRO JHAGADA VAYE PANI TYO XITTAI SOLVE HOS RA KUNAI PROBLEMS HARU PANI NA VAYERA SAMBANDHA RA MAYA JHANAII BADHOS RA SADHAI VARI KAAYAM RAHOSSS 💌💓 I ALMOST GAVE UP ON ONLINE LOVE TILL I MET YOUUU 💕 IT'S JUST BEEN 43 DAYS OF US BEING TOGETHER AND I WANNA KEEP THIS BOND FOREVER 💗♾️ AT LAST, I LOVE YOUUUU AND I WILL KEEP LOVING YOU FOREVER 🫶🫶 </p>
 </div>
 <script>
 const yesButton= document.getElementById("Y");
 const noButton= document.getElementById("N");
 const mainPage= document.getElementById("mainpage");
 const celebrationPage= document.getElementById("celebrationpage");
+const audio = document.getElementById("valentineAudio");
 yesButton.addEventListener("click", function () {
 mainPage.style.display= "none";
 celebrationPage.style.display= "block";
@@ -95,6 +95,7 @@ particleCount: 500,
 spread: 180,
 origin: { y: 0.6 }
 } );
+audio.play()
 } );
 const button= document.getElementById("N");
 button.addEventListener("click", function () {
