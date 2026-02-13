@@ -1,6 +1,11 @@
 <html>
 <head>
 <title> For You </title>
+<audio src="https://raw.githubusercontent.com/ree012/forhim/8a648eb6fcb0301a8f11a81f8f9a9fdab7db961a/ssstik.io_1770997493963.mp3" 
+autoplay
+loop
+hidden>
+</audio>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
 </script>
 <style>
@@ -15,7 +20,7 @@ display: block;
 margin: 0 auto;
 }
 body {
-background-color: #FFB6C1;
+background: linear-gradient(120deg, #FFB6C1, #FF69B4);
 }
 h1 {
 font-family: 'Pacifico', cursive;
@@ -57,6 +62,10 @@ color: #FFFFFF;
 text-align: center;
 transition: 0.3s;
 }
+button:active {
+transform: scale(0.95);
+box-shadow: none;
+}
 </style>
 </head>
 <body>
@@ -69,9 +78,9 @@ transition: 0.3s;
 </div>
 </div>
 <div id="celebrationpage">
-<h2> YAYAYAYA!! I KNEW YOU WOULD SAY YES!! (ofc i didn't force you to click you on "yes", right? hehe 🤭) </h2>
+<h2> YAYAYAYA!! I KNEW YOU WOULD SAY YES!! 💓 (after reading the paragraph try clicking on "no" 🤭) </h2>
 <img src="https://raw.githubusercontent.com/ree012/iiii/86108f2b5b7afcb24b6cbf1788cb287f7bc5a110/73133c160cd2fbbeb10f32442660460d.jpg">
-<p> FROM NOW, I HOPE WE CELEBRATE VALENTINE'S WEEK WITH EACH OTHER EVERY YEAR AND NEVER FIND EACH OTHER'S REPLACEMENT IN THIS LONG DISTANCE RELATIONSHIP 🧿💞 I LOVE YOU SO MUCHHH, MY LOVEE💘💗🫶 FOREVER LOCKED IN TILL DEATH🔒 I REALLY AND REALLY WISH HAMI DUITA JIWAN VARI SANGAI HUNXAUU RA EK ARKA LAI SUPPORT GARDAI YO JIWAN KO KATHIN BAATO MAA SANGAI HIDXAUU ANI HAMRO JHAGADA VAYE PANI TYO XITTAI SOLVE HOS RA KUNAI PROBLEMS HARU PANI NA VAYERA SAMBANDHA RA MAYA JHANAII BADHOS RA SADHAI VARI KAAYAM RAHOSSS 💌💓 </p>
+<p> FROM NOW, I HOPE WE CELEBRATE VALENTINE'S WEEK WITH EACH OTHER EVERY YEAR AND NEVER FIND EACH OTHER'S REPLACEMENT IN THIS LONG DISTANCE RELATIONSHIP 🧿💞 I LOVE YOU SO MUCHHH, MY LOVEE💘💗🫶 FOREVER LOCKED IN TILL DEATH🔒 I REALLY AND REALLY WISH HAMI DUITA JIWAN VARI SANGAI HUNXAUU RA EK ARKA LAI SUPPORT GARDAI YO JIWAN KO KATHIN BAATO MAA SANGAI HIDXAUU ANI HAMRO JHAGADA VAYE PANI TYO XITTAI SOLVE HOS RA KUNAI PROBLEMS HARU PANI NA VAYERA SAMBANDHA RA MAYA JHANAII BADHOS RA SADHAI VARI KAAYAM RAHOSSS 💌💓 I ALMOST GAVE UP ON ONLINE LOVE TILL I MET YOUUU 💕 IT'S JUST BEEN 43 DAYS OF US BEING TOGETHER AND I WANNA KEEP THIS BOND FOREVER 💗♾️ AT LAST, I LOVE YOUUUU AND I WILL KEEP LOVING YOU FOREVER MWAHHH 🫶🫶 </p>
 </div>
 <script>
 const yesButton= document.getElementById("Y");
@@ -81,16 +90,12 @@ const celebrationPage= document.getElementById("celebrationpage");
 yesButton.addEventListener("click", function () {
 mainPage.style.display= "none";
 celebrationPage.style.display= "block";
-
-
 confetti ( {
 particleCount: 500,
 spread: 180,
 origin: { y: 0.6 }
 } );
 } );
-
-
 const button= document.getElementById("N");
 button.addEventListener("click", function () {
 const x= Math.random() * 300 - 100;
